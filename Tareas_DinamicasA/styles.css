@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient( 135deg,#e29ef4 0% , rgb(90, 1, 81) 100%);
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.form-container {
+    background-color: hwb(289 40% 6%);
+    border: 2px solid #8800ff;
+    border-radius: 100px;
+    padding: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    box-shadow: 0 2px 10px rgba(8, 7, 7, 0.1);
+}
+
+#taskInput {
+    padding: 12px 17px;
+    border: 2px solid #7600eb;
+    border-radius: 10px;
+    font-size: 15px;
+    outline: none;
+}
+
+#taskInput:focus {
+    border-color: #7e03f2;
+}
+
+#taskStatus {
+    padding: 12px 17px;
+    border: 2px solid #8c00ff;
+    border-radius: 10px;
+    font-size: 16px;
+    background-color: rgb(211, 196, 237);
+    cursor: pointer;
+    outline: none;
+}
+#taskStatus:hover {
+    border-color: #e856f9;
+    background-color: #f3bce6;
+}
+#taskStatus:focus {
+    border-color: #eb9ef7;
+    outline: none;
+}
+
+#addButton {
+    padding: 10px 15px;
+    background-color: #8d05be;
+    color: rgb(255, 255, 255);
+    border: 3px solid  #6f0090;
+    border-radius: 20 px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#addButton:hover {
+    background-color: #d602ea;
+}
+
+#addButton:active {
+    transform: scale(0.98);
+}
+
+.tasks-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.task-card {
+    padding: 20px;
+    border-radius: 12px;
+    border: 2px solid #9c03d9;
+    box-shadow: 0 2px 5px rgba(3, 3, 3, 0.1);
+    transition: transform 0.2s;
+}
+
+.task-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.task-card.pendiente {
+    background-color: #90dbf4;
+}
+
+.task-card.en-proceso {
+    background-color: #f8f8a3;
+}
+
+.task-card.finalizada {
+    background-color: #98f298;
+}
+
+.task-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #0b0b0b;
+}
+
+.task-status {
+    font-size: 14px;
+    color: #000000;
+    font-weight: 500;
+}

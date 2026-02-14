@@ -1,6 +1,6 @@
 # Proyecto de Práctica Git
 
-**Autor:** Alejandro Torres
+**Autor:** Angela Maria Garcia
 
 ## Descripción
 
